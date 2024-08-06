@@ -1,0 +1,111 @@
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/bg.jpeg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.to-do-list {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    padding:10px 100px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(138, 69, 69, 0.492);
+}
+
+button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: rgb(237, 228, 228);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.add-button {
+    background-color: rgba(106, 197, 106, 0.6);
+}
+
+.add-button:hover {
+    background-color: rgba(37, 166, 37, 0.6);
+}
+
+.delete-button {
+    background-color: rgba(206, 82, 34, 0.6);
+}
+
+.delete-button:hover {
+    background-color: rgba(220, 185, 122, 0.6);
+}
+
+.move-button {
+    background-color: rgba(13, 17, 80, 0.8);
+}
+
+.move-button:hover {
+    background-color: rgba(22, 22, 120, 0.6);
+}
+
+input[type="text"] {
+    font-size: 1.6rem;
+    padding: 13px;
+    margin: 19px;
+    border: 2px solid rgba(218, 203, 203, 0.455);
+    color: rgb(99, 96, 96);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 700px; 
+    overflow-wrap: break-word; /* Ensures text wraps to the next line */
+}
+
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 16px;
+    background-color: rgba(221, 220, 220, 0.6);
+    margin-bottom: 10px;
+    border: 3px solid rgba(215, 210, 210, 0.778);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px rgba(77, 66, 66, 0.3);
+}
+
+.text {
+    flex: 1;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.delete-button, .move-button {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
